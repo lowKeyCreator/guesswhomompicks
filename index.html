@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Guess Who Mom Picks!</title>
+
+    <link rel="stylesheet" href="styles/games.css"> 
+    <link rel="stylesheet" href="styles/effect.css"> 
+    
+  </head>
+  <body>
+    <main>
+      <div class="game-container">
+        <div class="title">Guess Who Mom Picks!</div> 
+        <div class="current-date-js date">Date</div>
+        <button class="move-button js-alexa-button"><img src="images/alexa.jpg" class="move-icon" alt="Alexa">
+        <div>Alexa</div></button>
+  
+        <button class="move-button js-kobe-button"><img src="images/kobe.jpg" class="move-icon" alt="Kobe"><div>Kobe</div></button>
+  
+        <button class="move-button js-sebastian-twin-button"><img src="images/sebastiantwin.jpg" class="move-icon" alt="Seb Twin"><div>Seb Twin</div></button>
+  
+        <p class="js-result result"></p>
+        <p class="js-moves moves"> </p>
+        <div class="game-scores">
+          <div class="js-score score"></div>
+        </div>
+       
+      
+        <button class="reset-score-button js-reset-button">Reset Score</button>
+        <button class="auto-play-button js-autoplay-button">Auto Play</button>
+  
+      </div>
+
+      <div class="guide-container">
+        <div>How to Play? - 'Pick any of the 3 Character'</div>
+        <div class="mechanics"> <p> You picked Alexa = If my mom picked Alexa 'You win', if my mom picked Kobe 'You lose' </p><br>
+           <p>You picked Kobe = If my mom picked Kobe 'You win', if my mom picked Alexa 'You lose'</p> <br><p> Either you picked Alexa or Kobe if my mom picked Seb Twin it's a 'Tie' </p>
+          <br><p>You picked Seb Twin = If my mom picked Seb Twin 'You win', if my mom picked Alexa 'You lose', if my mom picked Kobe it's a 'Tie'</p></div>
+        <div class="guide-container1">
+          <div class="guide-container11">
+            <div>A = Alexa</div>
+            <div>K = Kobe</div>
+            <div>S = Seb Twin</div>
+          </div>
+          <div class="guide-container12">
+            <div>D = Reset</div>
+            <div>G = Auto/Stop Play</div>
+            <div>or click the icon</div>
+          </div>
+        </div>
+       
+       </div>
+     </main>
+     <script type="module" src="scripts/dayjs.js"></script>
+     <script  src="scripts/effects.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+     <script type="module" src="scripts/games.js">
+    </script>
+   
+  </body>
+</html>
